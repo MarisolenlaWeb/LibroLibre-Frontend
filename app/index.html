@@ -63,20 +63,36 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <span id="browser-sync-binding"></span>
   <template is="dom-bind" id="app">
     
-    <!--Header-->
-    <paper-toolbar>
-      <span class="title">Libro Libre</span>
-      <paper-tabs selected="0">
-        <paper-tab>Inicio</paper-tab>
-        <paper-tab>Acerca de</paper-tab>
-        <paper-tab>Login</paper-tab>
-      </paper-tabs>
-      <paper-icon-button icon="account-circle">+</paper-icon-button>
-    </paper-toolbar>
 
-    <paper-card image="images/books.jpg" class="white" style="-webkit-filter: brightness(0.5); filter: brightness(0.5);"> 
-    <p class="titulo">Libro Libre</p>
-    </paper-card>
+  <!--Header-->
+    <section data-route="menu">        
+      <paper-toolbar class="menu">
+        <span class="title">Libro Libre</span>
+        <paper-tabs selected="0">
+          <paper-tab>Inicio</paper-tab>
+          <paper-tab>Acerca de</paper-tab>
+          <paper-tab>Login</paper-tab>
+        </paper-tabs>
+        <paper-icon-button icon="account-circle">+</paper-icon-button>
+      </paper-toolbar>
+    </section>
+
+  <!--Content-->
+    <section data-route="home">
+      <!-- <paper-card image="images/books.jpg" class="bg-home">
+      </paper-card> -->
+      <iron-image class="bg-home" alt="Libro Libre Mx" src="images/books.jpg">
+       <paper-card>
+        
+       </paper-card>
+      </iron-image>
+    </section>  
+
+  <!--Footer-->
+    <section data-route="footer">
+              
+    </section>  
+
 
   <h2>Agregados Recientemente</h2>
   <style is="custom-style">
