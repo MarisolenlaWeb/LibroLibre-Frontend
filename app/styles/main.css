@@ -12,3 +12,21 @@ body {
   font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #333;
 }
+main{
+	max-width: 100%;
+	align-content: center;
+}
+main div {
+	text-align: center;
+}
+
+.titulo{
+	width: 100%;
+	display: inline;
+	position: absolute;
+    top: 200px;
+    text-align: center;
+    color: white;
+    font-size: 100px;
+
+}
