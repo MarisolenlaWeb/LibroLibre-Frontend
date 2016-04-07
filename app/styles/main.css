@@ -50,3 +50,16 @@ main div {
     margin-top: -60px;
 }
 
+.inline{
+	display: inline;
+}
+.center{
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+    color: #3E90A2;
+    font-style: oblique;
+    font-size: 80px;
+}

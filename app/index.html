@@ -64,85 +64,140 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <template is="dom-bind" id="app">
     
 
-  <!--Header-->
-    <section data-route="menu">        
-      <paper-toolbar class="menu">
-        <span class="title">Libro Libre</span>
-        <paper-tabs selected="0">
-          <paper-tab>Inicio</paper-tab>
-          <paper-tab>Acerca de</paper-tab>
-          <paper-tab>Login</paper-tab>
-        </paper-tabs>
-        <paper-icon-button icon="account-circle">+</paper-icon-button>
-      </paper-toolbar>
-    </section>
+    <!--Header-->
+    <paper-toolbar>
+      <span class="title">Libro Libre</span>
+      <paper-tabs selected="0">
+        <paper-tab>Inicio</paper-tab>
+        <paper-tab>Acerca de</paper-tab>
+        <paper-tab>Login</paper-tab>
+      </paper-tabs>
+      <paper-icon-button icon="account-circle">+</paper-icon-button>
+    </paper-toolbar>
+
+    <paper-card image="images/books.jpg" class="white" style="-webkit-filter: brightness(0.5); filter: brightness(0.5);"> 
+    <p class="titulo">Libro Libre</p>
+    </paper-card>
+
 
   <!--Content-->
     <section data-route="home">
       <!-- <paper-card image="images/books.jpg" class="bg-home">
       </paper-card> -->
-      <iron-image class="bg-home" alt="Libro Libre Mx" src="images/books.jpg">
        <paper-card>
         
        </paper-card>
       </iron-image>
+      <h2>Agregados Recientemente</h2>
+      </main>
+      <div id="scrollable-element" style="overflow: auto;">
+      <x-element scroll-target="scrollable-element" class="center">
+        
+       <style is="custom-style">
+        .cafe-header { @apply(--paper-font-headline); }
+        .cafe-light { color: var(--paper-grey-600); }
+        .cafe-location {
+          float: right;
+          font-size: 15px;
+          vertical-align: middle;
+        }
+        .card-content{
+          align-content: center;
+        }
+        .cafe-reserve { color: var(--google-blue-500); }
+        iron-icon.star {
+          --iron-icon-width: 16px;
+          --iron-icon-height: 16px;
+          color: var(--paper-amber-500);
+        }
+        iron-icon.star:last-of-type { color: var(--paper-grey-500); }
+      </style>
+      <main>
+        <div class="inline">
+          <paper-card image="images/potter.jpg">
+            <div class="card-content">
+              <div class="cafe-header">Harry Potter
+                <div class="cafe-location cafe-light">
+                  <iron-icon icon="communication:location-on"></iron-icon>
+                  <span>250ft</span>
+                </div>
+              </div>
+              <p>Autor</p>
+              <div class="cafe-rating">
+                <iron-icon class="star" icon="star"></iron-icon>
+                <iron-icon class="star" icon="star"></iron-icon>
+                <iron-icon class="star" icon="star"></iron-icon>
+                <iron-icon class="star" icon="star"></iron-icon>
+                <iron-icon class="star" icon="star"></iron-icon>
+              </div>
+              <p class="cafe-light">"Información del Libro".</p>
+            </div>
+            <div class="card-actions">
+              <p>Nombre del que aporta el libro</p> <br>
+              <paper-button class="cafe-reserve">Más info</paper-button>
+            </div>
+          </paper-card>
+        </div>
+        <style is="custom-style">
+          .cafe-header { @apply(--paper-font-headline); }
+          .cafe-light { color: var(--paper-grey-600); }
+          .cafe-location {
+            float: right;
+            font-size: 15px;
+            vertical-align: middle;
+          }
+          .card-content{
+            align-content: center;
+          }
+          .cafe-reserve { color: var(--google-blue-500); }
+          iron-icon.star {
+            --iron-icon-width: 16px;
+            --iron-icon-height: 16px;
+            color: var(--paper-amber-500);
+          }
+          iron-icon.star:last-of-type { color: var(--paper-grey-500); }
+        </style>
+          <div class="inline">
+            <paper-card image="images/potter.jpg">
+              <div class="card-content">
+                <div class="cafe-header">Harry Potter
+                  <div class="cafe-location cafe-light">
+                    <iron-icon icon="communication:location-on"></iron-icon>
+                    <span>250ft</span>
+                  </div>
+                </div>
+                <p>Autor</p>
+                <div class="cafe-rating">
+                  <iron-icon class="star" icon="star"></iron-icon>
+                  <iron-icon class="star" icon="star"></iron-icon>
+                  <iron-icon class="star" icon="star"></iron-icon>
+                  <iron-icon class="star" icon="star"></iron-icon>
+                  <iron-icon class="star" icon="star"></iron-icon>
+                </div>
+                <p class="cafe-light">"Información del Libro".</p>
+              </div>
+              <div class="card-actions">
+                <p>Nombre del que aporta el libro</p> <br>
+                <paper-button class="cafe-reserve">Más info</paper-button>
+              </div>
+            </paper-card>
+          </div> 
+    </x-element>
     </section>  
 
   <!--Footer-->
-    <section data-route="footer">
-              
+    <section class="footer" data-route="footer">
+         <footer>
+       <paper-tabs selected="0">
+        <paper-tab>Inicio</paper-tab>
+        <paper-tab>Acerca de</paper-tab>
+        <paper-tab>Login</paper-tab>
+      </paper-tabs>
+    </footer>      
     </section>  
 
 
-  <h2>Agregados Recientemente</h2>
-  <style is="custom-style">
-    .cafe-header { @apply(--paper-font-headline); }
-    .cafe-light { color: var(--paper-grey-600); }
-    .cafe-location {
-      float: right;
-      font-size: 15px;
-      vertical-align: middle;
-    }
-    .card-content{
-      align-content: center;
-    }
-    .cafe-reserve { color: var(--google-blue-500); }
-    iron-icon.star {
-      --iron-icon-width: 16px;
-      --iron-icon-height: 16px;
-      color: var(--paper-amber-500);
-    }
-    iron-icon.star:last-of-type { color: var(--paper-grey-500); }
-  </style>
-  <main>
-    <div>
-      <paper-card image="images/potter.jpg">
-        <div class="card-content">
-          <div class="cafe-header">Harry Potter
-            <div class="cafe-location cafe-light">
-              <iron-icon icon="communication:location-on"></iron-icon>
-              <span>250ft</span>
-            </div>
-          </div>
-          <p>Autor</p>
-          <div class="cafe-rating">
-            <iron-icon class="star" icon="star"></iron-icon>
-            <iron-icon class="star" icon="star"></iron-icon>
-            <iron-icon class="star" icon="star"></iron-icon>
-            <iron-icon class="star" icon="star"></iron-icon>
-            <iron-icon class="star" icon="star"></iron-icon>
-          </div>
-          <p class="cafe-light">"Información del Libro".</p>
-        </div>
-        <div class="card-actions">
-          <p>Nombre del que aporta el libro</p> <br>
-          <paper-button class="cafe-reserve">Más info</paper-button>
-        </div>
-      </paper-card>
-    </div>
-  </main>
   </template>
-
   <!-- build:js scripts/app.js -->
   <script src="scripts/app.js"></script>
   <!-- endbuild-->
