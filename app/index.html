@@ -9,14 +9,14 @@ Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
 
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Polymer Starter Kit">
-  <title>Polymer Starter Kit</title>
+  <meta name="generator" content="Libro Libre Mx">
+  <title>Libro Libre Mx</title>
 
   <!-- Place favicon.ico in the `app/` directory -->
 
@@ -194,6 +194,42 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         <paper-tab>Login</paper-tab>
       </paper-tabs>
     </footer>      
+
+  <!--Header-->
+    <section data-route="menu">        
+      <paper-toolbar class="menu">
+        <span class="title"><a href="#"><img src="images/logo_librolibre.png"></a></span>
+        <paper-tabs selected="0">
+          <paper-tab>Inicio</paper-tab>
+          <paper-tab>Acerca de</paper-tab>
+          <paper-tab>Login</paper-tab>
+        </paper-tabs>
+        <paper-icon-button icon="account-circle">+</paper-icon-button>
+      </paper-toolbar>
+    </section>
+
+  <!--Content-->
+    <section data-route="home">
+      <iron-image class="bg-home" alt="Libro Libre Mx" src="images/books.jpg"></iron-image>
+      <paper-card class="search-box">
+        <div class="card-content text-center">
+          <h1>Dona los libros que no usas y recibe los que sí necesitas.</h1> 
+        </div>
+        <div class="card-actions text-center">
+          <paper-button raised>Donar un libro</paper-button>
+          <paper-button raised>Buscar un libro</paper-button>
+        </div>
+      </paper-card>
+    </section>  
+
+  <!--Footer-->
+    <section data-route="footer">
+      <div class="footer">
+          <a href="#">Acerca de libro libre</a>
+          <a href="#">El equipo</a>
+          <a href="#">¿Cómo participo?</a>
+      </div>       
+
     </section>  
 
 
