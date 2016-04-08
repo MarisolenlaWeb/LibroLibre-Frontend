@@ -89,7 +89,108 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </paper-card>
     </section>  
+    <!--Content-->
+    <section data-route="home">
+      <!-- <paper-card image="images/books.jpg" class="bg-home">
+      </paper-card> -->
 
+      </iron-image>
+      <h2>Agregados Recientemente</h2>
+      </main>
+      <div id="scrollable-element" style="overflow: auto;">
+      <x-element scroll-target="scrollable-element" class="center">
+        
+       <style is="custom-style">
+        .cafe-header { @apply(--paper-font-headline); }
+        .cafe-light { color: var(--paper-grey-600); }
+        .cafe-location {
+          float: right;
+          font-size: 15px;
+          vertical-align: middle;
+        }
+        .card-content{
+          align-content: center;
+        }
+        .cafe-reserve { color: var(--google-blue-500); }
+        iron-icon.star {
+          --iron-icon-width: 16px;
+          --iron-icon-height: 16px;
+          color: var(--paper-amber-500);
+        }
+        iron-icon.star:last-of-type { color: var(--paper-grey-500); }
+      </style>
+      <main>
+        <div class="inline">
+          <paper-card image="images/potter.jpg">
+            <div class="card-content">
+              <div class="cafe-header">Harry Potter
+                <div class="cafe-location cafe-light">
+                  <iron-icon icon="communication:location-on"></iron-icon>
+                  <span>250ft</span>
+                </div>
+              </div>
+              <p>Autor</p>
+              <div class="cafe-rating">
+                <iron-icon class="star" icon="star"></iron-icon>
+                <iron-icon class="star" icon="star"></iron-icon>
+                <iron-icon class="star" icon="star"></iron-icon>
+                <iron-icon class="star" icon="star"></iron-icon>
+                <iron-icon class="star" icon="star"></iron-icon>
+              </div>
+              <p class="cafe-light">"Información del Libro".</p>
+            </div>
+            <div class="card-actions">
+              <p>Nombre del que aporta el libro</p> <br>
+              <paper-button class="cafe-reserve">Más info</paper-button>
+            </div>
+          </paper-card>
+        </div>
+        <style is="custom-style">
+          .cafe-header { @apply(--paper-font-headline); }
+          .cafe-light { color: var(--paper-grey-600); }
+          .cafe-location {
+            float: right;
+            font-size: 15px;
+            vertical-align: middle;
+          }
+          .card-content{
+            align-content: center;
+          }
+          .cafe-reserve { color: var(--google-blue-500); }
+          iron-icon.star {
+            --iron-icon-width: 16px;
+            --iron-icon-height: 16px;
+            color: var(--paper-amber-500);
+          }
+          iron-icon.star:last-of-type { color: var(--paper-grey-500); }
+        </style>
+          <div class="inline">
+            <paper-card image="images/potter.jpg">
+              <div class="card-content">
+                <div class="cafe-header">Harry Potter
+                  <div class="cafe-location cafe-light">
+                    <iron-icon icon="communication:location-on"></iron-icon>
+                    <span>250ft</span>
+                  </div>
+                </div>
+                <p>Autor</p>
+                <div class="cafe-rating">
+                  <iron-icon class="star" icon="star"></iron-icon>
+                  <iron-icon class="star" icon="star"></iron-icon>
+                  <iron-icon class="star" icon="star"></iron-icon>
+                  <iron-icon class="star" icon="star"></iron-icon>
+                  <iron-icon class="star" icon="star"></iron-icon>
+                </div>
+                <p class="cafe-light">"Información del Libro".</p>
+              </div>
+              <div class="card-actions">
+                <p>Nombre del que aporta el libro</p> <br>
+                <paper-button class="cafe-reserve">Más info</paper-button>
+              </div>
+            </paper-card>
+          </div> 
+    </x-element>
+    </section>  
      
 
   <!--Footer-->
