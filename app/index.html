@@ -89,14 +89,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         </div>
       </paper-card>
     </section>  
-    <!--Content-->
-    <section data-route="home">
-      <!-- <paper-card image="images/books.jpg" class="bg-home">
-      </paper-card> -->
 
-      </iron-image>
-      <h2>Agregados Recientemente</h2>
-      </main>
+    <!--Content-books-->
+    <section data-route="books">
       <div id="scrollable-element" style="overflow: auto;">
       <x-element scroll-target="scrollable-element" class="center">
         
@@ -124,27 +119,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
           <paper-card image="images/potter.jpg">
             <div class="card-content">
               <div class="cafe-header">Harry Potter
-                <div class="cafe-location cafe-light">
-                  <iron-icon icon="communication:location-on"></iron-icon>
-                  <span>250ft</span>
-                </div>
               </div>
               <p>Autor</p>
-              <div class="cafe-rating">
-                <iron-icon class="star" icon="star"></iron-icon>
-                <iron-icon class="star" icon="star"></iron-icon>
-                <iron-icon class="star" icon="star"></iron-icon>
-                <iron-icon class="star" icon="star"></iron-icon>
-                <iron-icon class="star" icon="star"></iron-icon>
+              <div class="card-actions">
+                <p>Nombre del que aporta el libro</p> <br>
               </div>
-              <p class="cafe-light">"Información del Libro".</p>
-            </div>
-            <div class="card-actions">
-              <p>Nombre del que aporta el libro</p> <br>
-              <paper-button class="cafe-reserve">Más info</paper-button>
             </div>
           </paper-card>
-        </div>
+        </div>  
         <style is="custom-style">
           .cafe-header { @apply(--paper-font-headline); }
           .cafe-light { color: var(--paper-grey-600); }
@@ -168,27 +150,14 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             <paper-card image="images/potter.jpg">
               <div class="card-content">
                 <div class="cafe-header">Harry Potter
-                  <div class="cafe-location cafe-light">
-                    <iron-icon icon="communication:location-on"></iron-icon>
-                    <span>250ft</span>
-                  </div>
                 </div>
                 <p>Autor</p>
-                <div class="cafe-rating">
-                  <iron-icon class="star" icon="star"></iron-icon>
-                  <iron-icon class="star" icon="star"></iron-icon>
-                  <iron-icon class="star" icon="star"></iron-icon>
-                  <iron-icon class="star" icon="star"></iron-icon>
-                  <iron-icon class="star" icon="star"></iron-icon>
-                </div>
-                <p class="cafe-light">"Información del Libro".</p>
-              </div>
               <div class="card-actions">
                 <p>Nombre del que aporta el libro</p> <br>
-                <paper-button class="cafe-reserve">Más info</paper-button>
               </div>
             </paper-card>
           </div> 
+      </main>  
     </x-element>
     </section>  
      
@@ -196,10 +165,12 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <!--Footer-->
     <section data-route="footer">
       <div class="footer">
-          <a href="#">Acerca de libro libre</a>
+          <a href="#">Acerca de Libro Libre</a>
           <a href="#">El equipo</a>
           <a href="#">¿Cómo participo?</a>
-      </div>       
+          <p class="inline">Copyright © 2016 Todos los derechos reservados</p>
+      </div>  
+
     </section>  
 
   </template>
