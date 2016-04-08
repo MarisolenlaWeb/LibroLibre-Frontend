@@ -37,7 +37,23 @@ main div {
 	text-align: center;
 }
 
+.inline{
+	display: inline;
+}
+.center{
+	text-align: center;
+}
 
+h1{
+	font-size: 30px;
+
+}
+
+h2{
+	text-align: center;
+    color: #599ba8;
+    font-size: 25px;
+}
 /*Menu*/
 
 .menu{
@@ -62,7 +78,7 @@ main div {
     background-size: cover;
 }
 
-/*Content*/
+/*Content-home*/
 
 .search-box{
 	width: 70%;
@@ -71,10 +87,11 @@ main div {
 	display: block;
 }
 
-h1{
-	font-size: 30px;
 
-}
+
+/*Content-books*/
+
+
 
 
 /*Footer*/
@@ -95,16 +112,4 @@ h1{
 	color: #599ba8;
 }
 
-.inline{
-	display: inline;
-}
-.center{
-	text-align: center;
-}
 
-h2{
-	text-align: center;
-    color: #3E90A2;
-    font-style: oblique;
-    font-size: 80px;
-}
