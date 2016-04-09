@@ -77,102 +77,48 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     </section>
 
   <!--Content-->
-    <section data-route="home">
-      <iron-image class="bg-home" alt="Libro Libre Mx" src="images/books.jpg"></iron-image>
-      <paper-card class="search-box">
-        <div class="card-content text-center">
-          <h1>Dona los libros que no usas y recibe los que sí necesitas.</h1> 
-        </div>
-        <div class="card-actions text-center">
-          <paper-button raised>Donar un libro</paper-button>
-          <paper-button raised>Buscar un libro</paper-button>
-        </div>
-      </paper-card>
-    </section>  
-
-    <!--Content-books-->
-    <section data-route="books">
-      <div id="scrollable-element" style="overflow: auto;">
-      <x-element scroll-target="scrollable-element" class="center">
-        
-       <style is="custom-style">
-        .cafe-header { @apply(--paper-font-headline); }
-        .cafe-light { color: var(--paper-grey-600); }
-        .cafe-location {
-          float: right;
-          font-size: 15px;
-          vertical-align: middle;
-        }
-        .card-content{
-          align-content: center;
-        }
-        .cafe-reserve { color: var(--google-blue-500); }
-        iron-icon.star {
-          --iron-icon-width: 16px;
-          --iron-icon-height: 16px;
-          color: var(--paper-amber-500);
-        }
-        iron-icon.star:last-of-type { color: var(--paper-grey-500); }
-      </style>
-      <main>
-        <div class="inline">
-          <paper-card image="images/potter.jpg">
-            <div class="card-content">
-              <div class="cafe-header">Harry Potter
-              </div>
-              <p>Autor</p>
-              <div class="card-actions">
-                <p>Nombre del que aporta el libro</p> <br>
-              </div>
+    <div class="content">
+      
+        <section data-route="home">
+          <iron-image class="bg-home" alt="Libro Libre Mx" src="images/books.jpg"></iron-image>
+          <paper-card class="search-box">
+            <div class="card-content text-center">
+              <h1>Dona los libros que no usas y recibe los que sí necesitas.</h1> 
+            </div>
+            <div class="card-actions text-center">
+              <paper-button raised>Donar un libro</paper-button>
+              <paper-button raised>Buscar un libro</paper-button>
             </div>
           </paper-card>
-        </div>  
-        <style is="custom-style">
-          .cafe-header { @apply(--paper-font-headline); }
-          .cafe-light { color: var(--paper-grey-600); }
-          .cafe-location {
-            float: right;
-            font-size: 15px;
-            vertical-align: middle;
-          }
-          .card-content{
-            align-content: center;
-          }
-          .cafe-reserve { color: var(--google-blue-500); }
-          iron-icon.star {
-            --iron-icon-width: 16px;
-            --iron-icon-height: 16px;
-            color: var(--paper-amber-500);
-          }
-          iron-icon.star:last-of-type { color: var(--paper-grey-500); }
-        </style>
-          <div class="inline">
-            <paper-card image="images/potter.jpg">
-              <div class="card-content">
-                <div class="cafe-header">Harry Potter
-                </div>
-                <p>Autor</p>
-              <div class="card-actions">
-                <p>Nombre del que aporta el libro</p> <br>
-              </div>
-            </paper-card>
-          </div> 
-      </main>  
-    </x-element>
-    </section>  
-     
+        </section>  
 
-  <!--Footer-->
-    <section data-route="footer">
-      <div class="footer">
-          <a href="#">Acerca de Libro Libre</a>
-          <a href="#">El equipo</a>
-          <a href="#">¿Cómo participo?</a>
-          <p class="inline">Copyright © 2016 Todos los derechos reservados</p>
-      </div>  
+        <!--Content-books-->
+        <section data-route="home">
+          <paper-material elevation="1">
+            <!--SECCION LISTA-LIBROS-->
+            <p class="subhead">Lista de libros:</p>
+            <div class="flex">
+              <my-list></my-list>
+              <my-list></my-list>
+              <my-list></my-list>
+            </div>
+            <!--SECCION LISTA-LIBROS-->
+          </paper-material>
+        </section> 
+         
 
-    </section>  
+      <!--Footer-->
+        <section data-route="footer">
+          <div class="footer">
+              <a href="#">Acerca de Libro Libre</a>
+              <a href="#">El equipo</a>
+              <a href="#">¿Cómo participo?</a>
+              <p class="inline">Copyright © 2016 Todos los derechos reservados</p>
+          </div>  
 
+        </section>
+
+    </div>
   </template>
 
   <!-- build:js scripts/app.js -->

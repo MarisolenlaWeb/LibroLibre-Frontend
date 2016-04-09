@@ -17,41 +17,53 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       :host {
         display: block;
       }
-
       span {
         @apply(--paper-font-body1);
       }
     </style>
-
-    <ul>
-      <template is="dom-repeat" items="{{items}}">
-        <li><span>{{item}}</span></li>
-      </template>
-    </ul>
+     <template is="dom-repeat" items="{{items}}">
+      <div class="">
+         <div class="box-container">
+          <div>
+          <h1>{{item}}</h1>
+            <div class=""><span>{{titulo}}</span></div>
+            <div class=""><span>{{slug}}</span></div>
+            <div class=""><span>{{autor}}</span></div>
+            <div class=""><span>{{isbn}}</span></div>
+          </div>
+        </div>
+      </div>
+    </template>
   </template>
 
   <script>
     (function() {
       'use strict';
-
       Polymer({
         is: 'my-list',
-
         properties: {
           items: {
             type: Array,
             notify: true,
           }
         },
-
         ready: function() {
           this.items = [
-            'Responsive Web App boilerplate',
-            'Iron Elements and Paper Elements',
-            'End-to-end Build Tooling (including Vulcanize)',
-            'Unit testing with Web Component Tester',
-            'Routing with Page.js',
-            'Offline support with the Platinum Service Worker Elements'
+            'libro 1',
+            'libro 2',
+            'libro 3',
+          ];
+          this.titulo = [
+            'Vulnerable (Morgans of Nashville)',
+          ];
+          this.slug = [
+            'FREE Shipping on eligible orders',
+          ];
+          this.autor = [
+            'Mary Burton',
+          ];
+          this.isbn = [
+            'See all 8 items',
           ];
         }
       });

@@ -105,8 +105,33 @@ h2{
 
 /*Content-books*/
 
-main{
-	margin-bottom: 50px;
+.box-container{
+  border: 1px solid grey;
+  min-width: 200px;
+  margin: 0 10px;
+  padding: 20px;
+
+}
+
+.paper-material-0 {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 350px;
+  text-align: center;
+}
+
+.box-father{
+  border: 1px solid red;
+  width: 100%;
+}
+
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  min-width: 200px;
 }
 
 
